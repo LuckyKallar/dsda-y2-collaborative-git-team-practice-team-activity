@@ -11,7 +11,8 @@ if __name__ == "__main__":
     powerof = int(input("Enter a the power: "))
 
     #calculate the result
-    result = calculate_to_the_power(user_number, powerof)
+    result = calculate_to_the_power(user_number, powerof) * 2.3
+    newData = f"{user_number}^{powerof}={result}"
 
     #print the result
     print(f"The square of {user_number} to the power of {powerof} is {result}")
