@@ -1,6 +1,9 @@
-def greet_user(name):
-    """Greets the user by name."""
-    print(f"Hello, {name}!")
+def greet_user(name, age):
+    """Greets the user by name and age."""
+    if age >= 18:
+        print(f"Hello, {name}! Welcome!")
+    else:
+        print(f"Hi, {name}! How can I help you today?")
 
 
 def calculate_square(number):
@@ -17,8 +20,7 @@ def save_to_log(name, square):
 if __name__ == "__main__":
     user_name = input("Enter your name: ")
     user_number = int(input("Enter a number: "))
+    user_age = int(input("Enter your age: "))
     result = calculate_square(user_number)
     greet_user(user_name)
     save_to_log(user_name, result)
-
-# Changes here for testing the process
